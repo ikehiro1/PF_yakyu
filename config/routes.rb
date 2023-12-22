@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'homes/top'
   get 'teams/show'
   get 'teams/edit'
   get 'teams/update'
