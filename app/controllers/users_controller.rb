@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   def update
   end
 
-  def delete
+  def destroy
   end
 
   def leave

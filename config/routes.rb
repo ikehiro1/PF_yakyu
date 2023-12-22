@@ -1,14 +1,8 @@
 Rails.application.routes.draw do
-  get 'homes/top'
-  get 'teams/show'
-  get 'teams/edit'
-  get 'teams/update'
-  get 'users/show'
-  get 'users/edit'
-  get 'users/update'
-  get 'users/delete'
-  get 'users/leave'
   devise_for :users
+  get '/' => 'homes#top'
+  resources :teams, only:[:show,:edit,:update,:destroy]
+  resources :users, only:[:show,:edit,:update,:destroy,:leave]
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
