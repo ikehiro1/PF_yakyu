@@ -9,6 +9,20 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
+  <header>
+    <div class="header_title">
+      <h1>
+        <a href="/">野球やろうぜ！</a>
+      </h1> 
+    </div>
+    <div><%= image_tag "samurai_imag.png", size: "100x100"%>></div>
+    <nav class="nav_ber">
+      <ul>
+        <li><a href="/orders">オーダー</a></li>
+        <li><a href="/teams">チーム</a></li> 
+      </ul>  
+    </nav>
+  <header>
 
   <body>
     <%= yield %>
