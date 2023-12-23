@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   get '/' => 'homes#top'
   resources :orders, only:[:index]
-  resources :teams, only:[:show,:edit,:update,:destroy]
-  resources :users, only:[:show,:edit,:update,:destroy,:leave]
+  resources :teams, only:[:show,:edit,:update,:destroy,:index]
+  resources :users, only:[:show,:edit,:update,:destroy,:index,:leave]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
