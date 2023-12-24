@@ -4,6 +4,7 @@
     <div>チーム名</div>
     <%=f.text_field :team_name %><br><br>
     <div>チーム画像</div>
-    <%=f.file_field :team_img, accept: 'imag/*' %>
-    <%end%>
+    <%=f.file_field :team_img, accept: 'imag/*' %><br><br>
+    <%=f.submit "作成" %>
+  <%end%>
 </div>
