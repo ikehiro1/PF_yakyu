@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>チーム作成</h1>
+  <%= form_with model: @team, local: true do |f| %>
+    <div>チーム名</div>
+    <%=f.text_field :team_name %><br><br>
+    <div>チーム画像</div>
+    <%=f.file_field :team_img, accept: 'imag/*' %>
+    <%end%>
+</div>

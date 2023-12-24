@@ -13,4 +13,11 @@ class TeamsController < ApplicationController
 
   def destroy
   end 
+
+  def create
+  end 
+
+  def new
+    @team = Team.new
+  end
 end
