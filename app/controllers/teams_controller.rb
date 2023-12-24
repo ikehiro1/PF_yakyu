@@ -3,6 +3,7 @@ class TeamsController < ApplicationController
   end
 
   def index
+    @teams = Team.all
   end
 
   def edit
@@ -17,10 +18,15 @@ class TeamsController < ApplicationController
   def create
     @team = Team.new(team_params)
     @team.save
-    redirect_to team_path
+    redirect_to teams_path
   end 
 
   def new
     @team = Team.new
   end
 end
+
+private
+def team_params
+  params.require(:team).permit(:team_name,:team_img)
+end 
