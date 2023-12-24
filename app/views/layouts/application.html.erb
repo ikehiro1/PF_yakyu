@@ -9,20 +9,20 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <header>
-    <div class="header_title">
-      <h1>
-        <a href="/">野球やろうぜ！</a>
-      </h1> 
-    </div>
-    <div><%= image_tag "samurai_imag.png", size: "100x100"%>></div>
-    <nav class="nav_ber">
-      <ul>
-        <li><a href="/orders">オーダー</a></li>
-        <li><a href="/teams">チーム</a></li> 
-      </ul>  
-    </nav>
-  <header>
+      <div class="header">
+        <%= link_to "/" do %>
+          <div class="samurai_img"><%= image_tag "samurai_imag.png", size: "100x100"%></div>
+        <% end %>  
+        <nav class="nav_ber">
+          <ul>
+            <li><a href="/orders">オーダー</a></li>
+            <li><a href="/teams">チーム</a></li>
+            <li><span>サイコロ(仮)</span></li>
+            <li><span>電卓(仮)</span></li>
+            <li><span>お問い合わせ(仮)</span></li>
+          </ul>  
+        </nav>
+      </div>
 
   <body>
     <%= yield %>
