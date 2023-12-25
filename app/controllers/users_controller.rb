@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :authenticate_user!
   def show
   end
 
@@ -12,8 +13,12 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.find(current_user.id)
+    @user.destroy
+    redirect_to new_user_registration_path
   end
 
   def leave
+    @user = User.find(current_user.id)
   end
 end
