@@ -1,4 +1,9 @@
 <div class="container">
   <h1>チーム詳細の予定</h1>
-  
+  <% if @team.team_img.attached? %>
+    <div><%= image_tag @team.team_img, size:"100x100" %></div>
+  <% else %>
+    <div><%= image_tag "samurai_imag.png", size:"100x100"%></div>
+  <%end%>
+  <div><%=@team.team_name%></div>
 </div>
