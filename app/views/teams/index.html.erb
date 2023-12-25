@@ -1,11 +1,13 @@
 <div class="container">
   <h1>ここはチーム一覧の予定</h1>
   <% @teams.each do |team| %>
-    <% if team.team_img.attached? %>
-     <div><%= image_tag team.team_img, size:"100x100" %></div>
-    <% else %>
-     <div><%= image_tag "samurai_imag.png", size:"100x100"%></div>
-    <%end%>
+    <%= link_to team_path	(team.id) do %>
+      <% if team.team_img.attached? %>
+       <div><%= image_tag team.team_img, size:"100x100" %></div>
+      <% else %>
+       <div><%= image_tag "samurai_imag.png", size:"100x100"%></div>
+      <%end%>
+    <%end%>  
     <%= team.team_name%>
   <%end%>
   検索機能
