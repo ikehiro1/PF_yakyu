@@ -6,4 +6,6 @@
     <div><%= image_tag "samurai_imag.png", size:"100x100"%></div>
   <%end%>
   <div><%=@team.team_name%></div>
+  <!--% if team.user.id === current_user.id %-->
+  <div><%= link_to "編集", edit_team_path(@team.id) %></div>
 </div>
