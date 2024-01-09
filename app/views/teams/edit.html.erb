@@ -2,8 +2,10 @@
   <h1>チーム編集の予定</h1>
   <%= form_with model: @team, method: :patch do |f| %>
   <%= f.file_field :team_img%><br>
-  <%= f.label :チーム名%><br>
+  <div>チーム名</div>
   <%= f.text_field :team_name%>
+  <div>チームの特徴</div>
+  <%= f.text_field :team_introduction%>
   <%= f.submit "更新"%>
   <% end %>
 </div>

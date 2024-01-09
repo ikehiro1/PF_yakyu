@@ -34,5 +34,5 @@ end
 
 private
 def team_params
-  params.require(:team).permit(:team_name,:team_img)
+  params.require(:team).permit(:team_name,:team_img,:team_introduction)
 end 

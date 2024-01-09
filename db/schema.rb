@@ -56,6 +56,7 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_24_091614) do
   create_table "teams", force: :cascade do |t|
     t.string "team_name"
     t.string "team_number"
+    t.string "team_introduction"
     t.string "team_img"
     t.string "schedule"
     t.datetime "created_at", null: false

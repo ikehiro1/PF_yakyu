@@ -4,8 +4,11 @@
     <div><%= image_tag @team.team_img, size:"100x100" %></div>
   <% else %>
     <div><%= image_tag "samurai_imag.png", size:"100x100"%></div>
-  <%end%>
+  <% end %>
+  <div>チーム名</div>
   <div><%=@team.team_name%></div>
+  <div>チームの特徴</div>
+  <div><%=@team.team_introduction%></div>
   <!--% if team.user.id === current_user.id %-->
   <div><%= link_to "編集", edit_team_path(@team.id) %></div>
 </div>
