@@ -25,7 +25,7 @@ class TeamsController < ApplicationController
     @team = Team.new(team_params)
     @team.save
     redirect_to teams_path
-  end 
+  end
 
   def new
     @team = Team.new
