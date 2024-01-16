@@ -1,15 +1,15 @@
 <div class="container">
   <div>ここはオーダー表の予定</div>
 <%= form_with model: @order, url: orders_path, method: :patch do |f|%>
-<%= f.label :"オーダー" %>
-<%= f.text_field :order_number1%>
-<%= f.text_field :order_number2%>
-<%= f.text_field :order_number3%>
-<%= f.text_field :order_number4%>
-<%= f.text_field :order_number5%>
-<%= f.text_field :order_number6%>
-<%= f.text_field :order_number7%>
-<%= f.text_field :order_number8%>
-<%= f.text_field :order_number9%>
+<%= f.label :"オーダー" %><br>
+<%= f.text_field :order_number1%><br>
+<%= f.text_field :order_number2%><br>
+<%= f.text_field :order_number3%><br>
+<%= f.text_field :order_number4%><br>
+<%= f.text_field :order_number5%><br>
+<%= f.text_field :order_number6%><br>
+<%= f.text_field :order_number7%><br>
+<%= f.text_field :order_number8%><br>
+<%= f.text_field :order_number9%><br>
 <%end%>
 </div>
