@@ -2,14 +2,24 @@
   <div>ここはオーダー表の予定</div>
 <%= form_with model: @order, url: orders_path, method: :patch do |f|%>
 <%= f.label :"オーダー" %><br>
+<%= f.label :"打順1" %><br>
 <%= f.text_field :order_number1%><br>
+<%= f.label :"打順2" %><br>
 <%= f.text_field :order_number2%><br>
+<%= f.label :"打順3" %><br>
 <%= f.text_field :order_number3%><br>
+<%= f.label :"打順4" %><br>
 <%= f.text_field :order_number4%><br>
+<%= f.label :"打順5" %><br>
 <%= f.text_field :order_number5%><br>
+<%= f.label :"打順6" %><br>
 <%= f.text_field :order_number6%><br>
+<%= f.label :"打順7" %><br>
 <%= f.text_field :order_number7%><br>
+<%= f.label :"打順8" %><br>
 <%= f.text_field :order_number8%><br>
+<%= f.label :"打順9" %><br>
 <%= f.text_field :order_number9%><br>
+<%= f.submit :"更新"%>
 <%end%>
 </div>
