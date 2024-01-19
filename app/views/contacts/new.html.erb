@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>お問い合わせ</h1>
+  <%= form_with(model: @contact, local: true) do |f| %>
+    <div>お名前</div>
+    <%= f.text_field :name %>
+    <div>メールアドレス</div>
+    <%= f.email_field :email, autocomplete: "email" %>
+    <div>内容</div>
+    <%= f.text_field :content %>
+    <%= f.submit "送信"%>
+  <%end%>
+</div>  

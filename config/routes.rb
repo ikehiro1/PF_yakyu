@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   resources :teams, only:[:show,:edit,:update,:destroy,:index,:create,:new]
   resources :users, only:[:show,:edit,:update,:destroy,:index,] do 
     get 'leave'
+  end 
+  resource :contacts, only: [:new, :create] do
+    get "/thanks" => "contacts#thanks"
   end  
 
 

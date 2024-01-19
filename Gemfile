@@ -69,3 +69,5 @@ gem "devise"
 gem 'simple_calendar'
 gem "sassc-rails"
 gem "enum_help"
+source "https://rubygems.org"
+gem 'dotenv-rails'
